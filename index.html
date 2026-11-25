@@ -17,7 +17,7 @@
       <div class="inner header-inner">
         <a href="#top" class="logo">🍯 ร้านน้ำผึ้งของฉัน</a>
         <nav>
-          <a href="#features">จุดเด่น</a>
+          <a href="#gallery">ภาพสินค้า</a>
           <a href="#story">เรื่องราว</a>
           <a href="#order" class="nav-btn">สั่งซื้อ</a>
         </nav>
@@ -25,7 +25,7 @@
     </header>
 
     <main id="top">
-      <!-- Hero -->
+      <!-- Hero (พื้นหลังเป็นรูป hero-bg.jpg เต็มพื้นที่) -->
       <section class="hero">
         <div class="inner hero-inner">
           <div class="hero-text">
@@ -33,32 +33,54 @@
             <p>รสเข้มข้น กลิ่นหอมธรรมชาติ ไม่ผสม ไม่แต่งสี บรรจุขวด 700 ml</p>
             <a href="#order" class="btn">สั่งซื้อเลย</a>
           </div>
-          <div class="hero-img">
-            <img src="images/wild.jpg" alt="น้ำผึ้งป่า 700 ml" />
+        </div>
+      </section>
+
+      <!-- สไลด์ภาพ -->
+      <section id="gallery" class="section">
+        <div class="inner">
+          <h2>ภาพการทำงานของเรา</h2>
+
+          <div class="slider" id="slider">
+            <div class="slides">
+              <figure class="slide">
+                <img src="images/slide-1.jpg" alt="น้ำผึ้งป่า" />
+                <figcaption>น้ำผึ้งป่าแท้ ไม่ผสม ไม่แต่งสี</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/slide-2.jpg" alt="ป่า" />
+                <figcaption>เก็บจากป่าธรรมชาติ</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="images/slide-3.jpg" alt="การแพ็ก" />
+                <figcaption>แพ็กแน่นหนา ส่งทั่วประเทศ</figcaption>
+              </figure>
+            </div>
+
+            <button type="button" class="arrow prev" aria-label="ภาพก่อนหน้า">‹</button>
+            <button type="button" class="arrow next" aria-label="ภาพถัดไป">›</button>
+            <div class="dots"></div>
           </div>
         </div>
       </section>
 
-      <!-- จุดเด่น -->
-      <section id="features" class="section">
-        <div class="inner">
-          <h2>ทำไมต้องน้ำผึ้งของเรา</h2>
-          <div class="features">
-            <div class="feature"><span>🌳</span><h3>จากป่าธรรมชาติ</h3><p>เก็บจากแหล่งป่า ระบุที่มาได้</p></div>
-            <div class="feature"><span>🚫</span><h3>ไม่ผสมน้ำตาล</h3><p>น้ำผึ้งล้วน ไม่แต่งสี ไม่แต่งกลิ่น</p></div>
-            <div class="feature"><span>👨‍👧</span><h3>ธุรกิจครอบครัว</h3><p>ดูแลคุณภาพเองทุกขวด</p></div>
-            <div class="feature"><span>📦</span><h3>แพ็กแน่นหนา</h3><p>กันแตก ส่งทั่วประเทศ</p></div>
-          </div>
+      <!-- เรื่องราว -->
+      <section id="story" class="section alt">
+        <div class="inner story">
+          <h2>เรื่องราวของเรา</h2>
+          <p>
+            พ่อผมกลับมาจากป่าเมื่อ 20 ปีก่อน พร้อมกับน้ำผึ้งป่าขวดหนึ่ง กลิ่นหอมและรสชาติหวานเข้มข้นทำให้ผมติดใจตั้งแต่นั้นมา ผมจึงเริ่มเก็บน้ำผึ้งจากป่ามาขายให้เพื่อนบ้าน และต่อมาได้ขยายเป็นธุรกิจครอบครัวเล็ก ๆ ของเรา
+          </p>
         </div>
       </section>
 
       <!-- สั่งซื้อ -->
-      <section id="order" class="section alt">
+      <section id="order" class="section">
         <div class="inner order-box">
           <h2>สั่งซื้อ</h2>
 
           <div class="product-line">
-            <img src="images/wild.jpg" alt="" />
+            <img src="images/wild.jpg" alt="น้ำผึ้งป่าแท้ 700 ml" />
             <div>
               <h3>น้ำผึ้งป่าแท้ 700 ml</h3>
               <p class="price"><span id="unit-price"></span> บาท / ขวด</p>
@@ -81,16 +103,6 @@
               เมื่อกดส่ง ข้อความออเดอร์จะถูกสร้างและเปิด Line ให้ ร้านจะแจ้งค่าส่งและเลขบัญชี/PromptPay กลับไปครับ
             </p>
           </form>
-        </div>
-      </section>
-
-      <!-- เรื่องราว -->
-      <section id="story" class="section">
-        <div class="inner story">
-          <h2>เรื่องราวของเรา</h2>
-          <p>
-            พ่อผมกลับมาจากป่าเมื่อ 20 ปีก่อน พร้อมกับน้ำผึ้งป่าขวดหนึ่ง กลิ่นหอมและรสชาติหวานเข้มข้นทำให้ผมติดใจตั้งแต่นั้นมา ผมจึงเริ่มเก็บน้ำผึ้งจากป่ามาขายให้เพื่อนบ้าน และต่อมาได้ขยายเป็นธุรกิจครอบครัวเล็ก ๆ ของเรา
-          </p>
         </div>
       </section>
     </main>
