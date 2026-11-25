@@ -1,5 +1,0 @@
-# Plain static site (HTML/CSS/JS) — no framework, package manager or build step.
-# The site's files live in the honey-shop/ folder, which is published as-is.
-[build]
-  publish = "honey-shop"
-  command = ""
